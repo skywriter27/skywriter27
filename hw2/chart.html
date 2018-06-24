@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.min.js"></script>
+		<link rel="stylesheet" href="table.css">
+		<title>Interactive country ranking chart</title>
+	</head>
+	<body>
+		<h1>
+			Interactive country ranking chart
+		</h1>
+		<div class = "slider">
+			<text id = "before"></text>
+			<input type="range" name="points" step="1" value="0" id="slider-time">
+			<text id = "after"></text>
+		</div>
+		<div class = "checkbox">
+			<label class="contr_label">Filter by: </label>
+			<label><input type="checkbox" name="Americas"></input>Americas</label>
+			<label><input type="checkbox" name="Africa"></input>Africa</label>
+			<label><input type="checkbox" name="Asia"></input>Asia</label>
+			<label><input type="checkbox" name="Europe"></input>Europe</label>
+			<label><input type="checkbox" name="Oceania"></input>Oceania</label>
+		</div>
+		<div class = "radiobox">
+			<label class="contr_label">Aggregate by: </label>
+			<label><input type="radio" name="aggregation" value="country" checked="checked">County</label>
+			<label><input type="radio" name="aggregation" value="continent">Continent</label>
+		</div>
+		<div class = "radiobox">
+			<label class="contr_label">Encode bars by: </label>
+			<label><input type="radio" name="encoding" value="population" checked="checked">Population</label>
+			<label><input type="radio" name="encoding" value="gdp">GDP</label>
+		</div>
+		<div class = "radiobox">
+			<label class="contr_label">Sort by: </label>
+			<label><input type="radio" name="sorting" value="country" checked="checked">Country</label>
+			<label><input type="radio" name="sorting" value="population">Population</label>
+			<label><input type="radio" name="sorting" value="gdp">GDP</label>			
+		</div>
+		<script src="chart.js"></script>
+	</body>
+</html>

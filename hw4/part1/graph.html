@@ -1,0 +1,78 @@
+﻿<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Homework 4 (part 1)</title>
+		<link rel = "stylesheet" href = "style.css"/>
+        <script src="https://d3js.org/d3.v4.js"></script>
+		<script src = "js/graph.js" async></script>
+		<script src = "js/script.js" async></script>
+	</head>
+	<body>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label class="input_box">
+                            <input type="checkbox" class="input" id="fixed" autocomplete="off">
+                            Fixed Interval
+                        </label>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        <label class="input_box">
+                            <input type="checkbox" class="input" id="group" autocomplete="off">
+                            Group by continent
+                        </label>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><input type="radio" name="layout" value="linear" checked="checked" class="input layout" autocomplete="off">Linear</label>
+                    </td>
+                    <td>
+                        <label><input type="radio" name="layout" value="scatterplot" class="input layout" autocomplete="off">Scatterplot</label>
+                    </td>
+                    <td>
+                        <label><input type="radio" name="layout" value="circular" class="input layout" autocomplete="off">Circular</label>
+                    </td>
+                    <td>
+                        <label><input type="radio" name="layout" value="force" class="input layout" autocomplete="off">Force</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="input attribute" id="linear" autocomplete="off">
+                            <option value="gdp">GDP</option>
+                            <option value="population" selected>Population</option>
+                            <option value="life_expectancy">Life expectancy</option>
+                            <option value="longitude">Longitude</option>
+                            <option value="latitude">Latitude</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="input attribute" id="scatterplot" disabled autocomplete="off">
+                            <option value="population gdp" selected>GDP and Population</option>
+                            <option value="latitude longitude">Latitude and Longitude</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="input attribute" id="circular" disabled autocomplete="off">
+                            <option value="gdp">GDP</option>
+                            <option value="population" selected>Population</option>
+                            <option value="life_expectancy">Life expectancy</option>
+                            <option value="longitude">Longitude</option>
+                            <option value="latitude">Latitude</option>
+                        </select>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+		<div class = "graph">
+		</div>
+	</body>
+</html>

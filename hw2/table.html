@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="table.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.min.js"></script>
+	<script src="table.js"></script>
+	<title>
+		Interactive country ranking table
+	</title>
+</HEAD>
+<BODY>
+	<h1>
+		Interactive country ranking table
+	</h1>
+	<div class = "slider">
+			<text id = "before"></text>
+			<input type="range" name="points" min="1995" max="2012" step="1" value="0" id="slider-time">
+			<text id = "after"></text>
+	</div>
+	<div class = "checkbox">
+		<label class="contr_label">Filter by: </label>
+		<label><input type="checkbox" name="Americas"></input>Americas</label>
+		<label><input type="checkbox" name="Africa"></input>Africa</label>
+		<label><input type="checkbox" name="Asia"></input>Asia</label>
+		<label><input type="checkbox" name="Europe"></input>Europe</label>
+		<label><input type="checkbox" name="Oceania"></input>Oceania</label>
+	</div>
+	<div class = "radiobox">
+		<label class="contr_label">Aggregate by: </label>
+		<label><input type="radio" name="aggregation" value="country" checked="checked">Country</label>
+		<label><input type="radio" name="aggregation" value="continent">Continent</label>
+	</div>
+</BODY>
+</HTML>
